@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    margin: 8px 100px 0;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+.header div {
+    border: 5px solid red;
+    width: fit-content;
+    min-width: 0px;
+}
+
+.header-logo {
+    margin-right: auto;
+}
