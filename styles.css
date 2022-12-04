@@ -3,21 +3,32 @@
     src: url("./fonts/quotefont.ttf");
 }
 
+@font-face {
+    font-family: lemon-milk-b;
+    src: url("./fonts/lemon-milk-bold.otf");
+}
+
 body {
     text-align: center;
-    margin: none;
+    margin: 0;
+}
+
+.black-background {
+    background-color: #1f2937;
 }
 
 .header {
     display: flex;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     width: 70%;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .header div {
-    border: 5px dotted red;
+    /* border: 5px dotted red; */
     margin-left: 20px;
+    color: #f9faf8;
+    font-size: 24px;
 }
 
 .header-logo {
@@ -26,20 +37,37 @@ body {
 }
 
 .hero {
-    margin: 10px auto;
-    width: 70%;
-    border: 5px dotted blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 450px;
+    /* border: 5px dotted blue; */
     display: flex;
+    justify-content: center;
     min-width: 0px;
+}
+
+.hero > div > h1 {
+    font-family: lemon-milk-b;
+    font-size: 40px;
+    font-weight: 800;
+    color: #f9faf8;
 }
 
 .desc {
     text-align: center;
+    width: 35%;
+    height: 70%;
+    align-self: center;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 img {
-    width: 70%;
-    height: auto;
+    align-self: center;
+    width: 35%;
+    height: 70%;
 }
 
 .fakta-container {
@@ -47,7 +75,7 @@ img {
     width: 60%;
     height: auto;
     justify-content: space-around;
-    border: 5px dotted green;
+    /* border: 5px dotted green; */
     margin: auto;
 }
 
@@ -56,8 +84,7 @@ img {
     min-height: 0px;
     width: 250px;
     height: 150px;
-    border: 5px dotted yellow;
-    background-color: lightgreen;
+    /* border: 5px dotted yellow; */
 }
 
 .fakta-container > div > img {
@@ -68,23 +95,26 @@ img {
 }
 
 .quotes-bali {
+    background-color: #e5e7eb;
     display: flex;
     min-width: 0px;
     align-items: center;
     justify-content: center;
-    border: 5px dotted black;
+    /* border: 5px dotted black; */
     margin-top: 100px;
+    margin-bottom: 100px;
     flex-direction: column;
     height: 400px;
 }
 
 .quotes-bali > div {
     width: 30%;
-    border: 5px dotted orange;
+    /* border: 5px dotted orange; */
 }
 
 .quotes-bali > div h1 {
     font-family: quote-font;
+    font-size: 36px;
 }
 
 .quotes-bali > div > h3 {
@@ -96,19 +126,29 @@ img {
     width: 70%;
     margin: 100px auto;
     justify-content: center;
-    border: 5px solid blue;
+    background-color: #3882f6;
+    border-radius: 10px;
+    /* border: 5px solid blue; */
 }
 
 .pesan-tiket > div {
     width: 50%;
-    border: 5px dotted red;
+    /* border: 5px dotted red; */
 }
 
 #btn-clickme {
+    background-color: #3882f6;
+    border-radius: 4px;
     padding: 0;
     font-size: 20px;
     font-weight: 700;
     width: 100px;
     height: 50px;
     align-self: center;
+    border: 4px solid #f9faf8;
+    cursor: pointer;
+}
+
+#btn-clickme:hover {
+    background-color: red;
 }
