@@ -1,4 +1,10 @@
+@font-face {
+    font-family: quote-font;
+    src: url("./fonts/quotefont.ttf");
+}
+
 body {
+    text-align: center;
     margin: none;
 }
 
@@ -32,6 +38,55 @@ body {
 }
 
 img {
-    width: 50%;
+    width: 70%;
     height: auto;
+}
+
+.fakta-container {
+    display: flex;
+    width: 60%;
+    height: auto;
+    justify-content: space-around;
+    border: 5px dotted green;
+    margin: auto;
+}
+
+.fakta-container > div {
+    min-width: 0px;
+    min-height: 0px;
+    width: 250px;
+    height: 150px;
+    border: 5px dotted yellow;
+    background-color: lightgreen;
+}
+
+.fakta-container > div > img {
+    border: 4px solid blue;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.quotes-bali {
+    display: flex;
+    min-width: 0px;
+    align-items: center;
+    justify-content: center;
+    border: 5px dotted black;
+    margin-top: 100px;
+    flex-direction: column;
+    height: 400px;
+}
+
+.quotes-bali > div {
+    width: 30%;
+    border: 5px dotted orange;
+}
+
+.quotes-bali > div h1 {
+    font-family: quote-font;
+}
+
+.quotes-bali > div > h3 {
+    text-align: end;
 }
